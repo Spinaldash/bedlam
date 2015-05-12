@@ -30,8 +30,7 @@ describe('authentication.js', function(){
   after(function(done){
     server.stop(function(){
       Mongoose.disconnect(done);
-    })
-
+    });
   });
 
   it('should have an empty token', function(done){
